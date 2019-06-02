@@ -1,9 +1,9 @@
-<mat-card class="user-card">
-  <img mat-card-image class="user-card-image" src="{{user.picture.large}}" alt="User picture" >
-  <mat-card-title>
-		<h1>{{user.name.title | titlecase}} {{user.name.first | titlecase }} {{user.name.last | titlecase}}</h1>
-	</mat-card-title>
-  <mat-card-content>
+<mat-card class="user-card" *ngIf="user">
+  <img mat-card-image class="user-card-image" src="{{user.picture.large}}" alt="User picture">
+  <mat-card-title class="user-card-title">
+    <h1>{{user.name.title | titlecase}} {{user.name.first | titlecase }} {{user.name.last | titlecase}}</h1>
+  </mat-card-title>
+  <mat-card-content class="user-card-title">
     <h2>{{ user.gender | titlecase }}</h2>
     <h2>{{ user.dob.age }} Years</h2>
     <h2>{{ user.dob.date | date: 'MMMM d, y' }}</h2>

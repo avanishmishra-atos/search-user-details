@@ -45,10 +45,10 @@
 }
 
 .list li {
-    padding: 10px;
+    padding: 20px;
     background: rgb(175, 204, 238);
     border-radius: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     text-align: center;
     font-size: 18px;
     font-weight: 600;
@@ -70,13 +70,38 @@
     padding: 10px;
     height: 525px;
 }
+
+.noUser {
+  text-align:center;
+  color:red;
+  font-size: 18px;
+}
   
 @media screen and (max-width: 600px) {
   .column {
-    width: 100%;
+    float: left;
+    padding: 0 2px;
+    width: 100%
+  }
+  
+  .right {
+    margin-top: 0px;
+  }
+
+  .search-text {
+    height: 25px;
+  }
+
+  .list li {
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
   }
 
   .virtual-scroll {
-    height: 50px;
+    height: 100px;
   }
 }

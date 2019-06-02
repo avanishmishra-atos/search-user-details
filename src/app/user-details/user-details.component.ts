@@ -9,7 +9,7 @@ declare const require;
   styleUrls: ['./user-details.component.css']
 })
 export class UserDetailsComponent implements OnInit {
-  @Input() user;
+  @Input() user: any;
   constructor() { }
 
   ngOnInit() {

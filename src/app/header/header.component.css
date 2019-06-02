@@ -67,13 +67,9 @@
     }
 
     .header img {
-      display: none;
+      padding-left: 0px;
     }
-    
-    .header img.logo {
-      display: none;
-    }
-    
+
     .header h1.title {
       font-size: 28px;
       font-weight: bold;

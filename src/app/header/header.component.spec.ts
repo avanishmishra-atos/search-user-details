@@ -22,4 +22,8 @@ describe('HeaderComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should display header title text', () => {
+    expect(fixture.nativeElement.querySelector('h1').textContent.trim()).toEqual('Simeio Solutions');
+  });
 });

@@ -8,9 +8,9 @@ describe('FooterComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FooterComponent ]
+      declarations: [FooterComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
@@ -21,5 +21,9 @@ describe('FooterComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should display footer text', () => {
+    expect(fixture.nativeElement.querySelector('h4').textContent.trim()).toEqual('© Copyright 2019 Avanish Mishra : All Rights Reserved');
   });
 });

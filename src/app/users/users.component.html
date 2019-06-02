@@ -1,20 +1,25 @@
-<div class="row">
-    <div class="card">
+<div class="row" *ngIf="!emptyUserList">
+  <div class="card">
     <div class="column left">
-        <div class="list">
-            <input class="search-text" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="search user by name">
-            <cdk-virtual-scroll-viewport  class="virtual-scroll" itemSize="10" >
-              <ng-container *cdkVirtualFor="let user of (users | filterUser:searchText)">
-                <li (click)="onSelect(user)" [ngClass]="{ 'selected': user.active, 'nonselected': !user.active  }"> {{user.name.title | titlecase}} {{user.name.first | titlecase }} {{user.name.last | titlecase}} </li>
-              </ng-container>
-            </cdk-virtual-scroll-viewport>
-          </div>
+      <div class="list">
+        <input class="search-text" type="text" name="search" [(ngModel)]="searchText" autocomplete="off"
+          placeholder="search user by name">
+        <cdk-virtual-scroll-viewport class="virtual-scroll" itemSize="10">
+          <ng-container *cdkVirtualFor="let user of (users | filterUser:searchText)">
+            <li (click)="onSelect(user)" [ngClass]="{ 'selected': user.active, 'nonselected': !user.active  }">
+              {{user.name.title | titlecase}} {{user.name.first | titlecase }} {{user.name.last | titlecase}} </li>
+          </ng-container>
+        </cdk-virtual-scroll-viewport>
+      </div>
     </div>
+  </div>
+
+  <div class="column right">
+    <div class="card">
+      <app-user-details [user]="selectedUser"></app-user-details>
     </div>
-    
-    <div class="column right">
-        <div class="card">
-        <app-user-details [user]="selectedUser"></app-user-details>
-        </div>
-    </div>
+  </div>
+</div>
+<div class="row" *ngIf="emptyUserList">
+  <h1 class="noUser">User Details Not Available!!!</h1>
 </div>
