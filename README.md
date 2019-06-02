@@ -15,6 +15,7 @@ Run `ng test` to execute the unit tests.
 
 ## Assumptions
 * User details loaded from provided user.json.
+* Used Virtual Scroll for better performance.
 * Search filter is applied on the user first and last name.
 * Tabs Home, Contact and About are just for presentation.
 * Company logo downloaded from google for presentation.
