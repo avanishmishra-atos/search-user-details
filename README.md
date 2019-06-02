@@ -1,2 +1,17 @@
-# search-user-details
-Single page application to search and display user details.
+# SearchUserDetails
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4. The backend is made from scratch. Whole stack in TypeScript.
+
+## Prerequisites
+Install Node.js
+Install Angular CLI: npm i -g @angular/cli
+From project root folder install all the dependencies: npm i
+
+## Run Application
+Run `ng serve`. 
+Navigate to `http://localhost:4200/`.
+
+## Assumptions
+User details loaded from provided user.json.
+Search filter is applied on the user first and last name.
+Tabs Home, Contact and About is just for presentation.
+Company logo download from google for presentation.
