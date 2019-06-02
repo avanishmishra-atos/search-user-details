@@ -9,6 +9,8 @@
     height: 220px;
 }
 
+
+
 .user-card-title h1 {
     text-align: center;
     font-family: arial;
@@ -21,22 +23,18 @@
 
 @media screen and (max-width: 600px) {
     .user-card-image {
-        padding-top: 5px;
-        width: 150px;
-        height: 150px;
+        padding-top: 1px;
+        width: 120px;
+        height: 120px;
     }
 
     .user-card-title h1 {
-        text-align: center;
         font-family: arial;
-        font-size: 24px;
-        font-weight: 600;
+        font-size: 22px;
     }
     
     .user-card-content h2 {
-        text-align: center;
         font-family: arial;
-        font-size: 18px;
-        font-weight: 600;
+        font-size: 14px;
     }
   }

@@ -14,8 +14,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Run `ng test` to execute the unit tests.
 
 ## Assumptions
-* User details loaded from provided user.json.
-* Used Virtual Scroll for better performance.
-* Search filter is applied on the user first and last name.
+* User details will be loaded from provided user.json.
+* By default first user will be selected once application get loaded.
+* Search filter is applied on the first and last name of the user.
+* Search text is case sensitive.
+* Used virtual scroll for faster data loading.
 * Tabs Home, Contact and About are just for presentation.
 * Company logo downloaded from google for presentation.

@@ -3,7 +3,7 @@
     <div class="column left">
       <div class="list">
         <input class="search-text" type="text" name="search" [(ngModel)]="searchText" autocomplete="off"
-          placeholder="search user by name">
+          placeholder="Search User by First and Last Name">
         <cdk-virtual-scroll-viewport class="virtual-scroll" itemSize="10">
           <ng-container *cdkVirtualFor="let user of (users | filterUser:searchText)">
             <li (click)="onSelect(user)" [ngClass]="{ 'selected': user.active, 'nonselected': !user.active  }">
