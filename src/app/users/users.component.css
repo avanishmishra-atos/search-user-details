@@ -1,0 +1,82 @@
+.column {
+  float: left;
+  padding: 0 2px;
+}
+
+.left {
+  width: 40%;
+}
+
+.right {
+  width: 55%;
+  margin-top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+  padding: 1px;
+  text-align: center;
+}
+
+.search-text {
+    box-shadow: 0 10px 40px 0 #B0C1D9;
+    width: 400px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.search-text::placeholder  {
+  text-align: center;
+  font-size: 18px;
+}
+
+.list {
+    max-width: 400px;
+    color: #333;
+    list-style: none;
+    margin: 20px auto;
+}
+
+.list li {
+    padding: 10px;
+    background: rgb(175, 204, 238);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.list li.selected {
+  background-color: rgb(241, 212, 78);
+}
+
+.list li.nonselected {
+  background-color: rgb(175, 204, 238);
+}
+
+.center {
+    text-align: center;
+}
+
+.virtual-scroll {
+    padding: 10px;
+    height: 525px;
+}
+  
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+
+  .virtual-scroll {
+    height: 50px;
+  }
+}

@@ -1,0 +1,10 @@
+.user-card {
+    text-align: center;
+    font-family: arial;
+}
+  
+.user-card-image {
+    padding-top: 20px;
+    width: 220px;
+    height: 220px;
+}

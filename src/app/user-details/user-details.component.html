@@ -1,0 +1,13 @@
+<mat-card class="user-card">
+  <img mat-card-image class="user-card-image" src="{{user.picture.large}}" alt="User picture" >
+  <mat-card-title>
+		<h1>{{user.name.title | titlecase}} {{user.name.first | titlecase }} {{user.name.last | titlecase}}</h1>
+	</mat-card-title>
+  <mat-card-content>
+    <h2>{{ user.gender | titlecase }}</h2>
+    <h2>{{ user.dob.age }} Years</h2>
+    <h2>{{ user.dob.date | date: 'MMMM d, y' }}</h2>
+    <h2>{{ user.email }}</h2>
+    <h2>{{ getCountryName(user.nat) }}</h2>
+  </mat-card-content>
+</mat-card>
