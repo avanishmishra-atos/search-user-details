@@ -18,6 +18,7 @@ Run `ng test` to execute the unit tests.
 * By default first user will be selected once application get loaded.
 * Search filter is applied on the first and last name of the user.
 * Search text is case sensitive.
+* Considered large picture option as others are blur.
 * Used virtual scroll for faster data loading.
 * Tabs Home, Contact and About are just for presentation.
 * Company logo downloaded from google for presentation.
