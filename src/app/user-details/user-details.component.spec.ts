@@ -29,7 +29,6 @@ describe('UserDetailsComponent', () => {
   });
 
   it(`should return country name for given code`, () => {
-    const app = fixture.debugElement.componentInstance;
     expect(component.getCountryName('IN')).toEqual('India');
   });
 
@@ -38,5 +37,12 @@ describe('UserDetailsComponent', () => {
     fixture.detectChanges();
     tick(300);
     expect(fixture.nativeElement.querySelector('h1').textContent.trim()).toEqual('Miss Anna Schmitt');
+  }));
+
+  it('should display user details in other language like user "Miss زهرا احمدی"', fakeAsync(() => {
+    component.user = userDetails[19];
+    fixture.detectChanges();
+    tick(300);
+    expect(fixture.nativeElement.querySelector('h1').textContent.trim()).toEqual('Miss زهرا احمدی');
   }));
 });
